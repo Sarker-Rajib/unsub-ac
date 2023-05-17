@@ -1,0 +1,188 @@
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+.unsubscribe .container {
+  max-width: 1120px;
+}
+.unsubscribe .head {
+  padding: 35px 0;
+  border-bottom: 1px solid #112369;
+}
+.unsubscribe .head .b-logo {
+  max-width: 350px;
+}
+.unsubscribe .main-body h1 {
+  font-size: 30px;
+  padding: 20px 0;
+  color: #112369;
+  font-weight: bold;
+}
+.unsubscribe .main-body .details {
+  padding: 0 70px;
+  border-bottom: 1px solid #112369;
+}
+.unsubscribe .main-body .details .item {
+  padding-bottom: 40px;
+}
+.unsubscribe .main-body .details .item .logo {
+  max-width: 50px;
+  margin-right: 20px;
+}
+.unsubscribe .main-body .details .item .text h4 {
+  font-size: 16px;
+  color: #112369;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.unsubscribe .main-body .details .item .text p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+}
+.unsubscribe .main-body .choose {
+  margin-left: 20px;
+  min-width: 30px;
+  /* Rounded sliders */
+}
+.unsubscribe .main-body .choose .switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 22px;
+}
+.unsubscribe .main-body .choose .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.unsubscribe .main-body .choose .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #bcbcba;
+  transition: 0.4s;
+  background-image: -ms-radial-gradient(50% 50%, circle closest-side, rgb(255, 255, 255) 0%, rgb(1, 2, 2) 100%);
+  box-shadow: 0px 0px 2px 0px rgba(1, 2, 2, 0.25);
+}
+.unsubscribe .main-body .choose .slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 0px;
+  bottom: -1px;
+  border: 1px solid #bcbcba;
+  transition: 0.4s;
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 4px 0px rgba(1, 2, 2, 0.0039215686), inset 0px 0px 5px 0px rgba(1, 2, 2, 0);
+}
+.unsubscribe .main-body .choose input:checked + .slider {
+  background-color: #16a8e1;
+  border: 1px solid #16a8e1;
+}
+.unsubscribe .main-body .choose input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.unsubscribe .main-body .choose input:checked + .slider:before {
+  transform: translateX(15px);
+}
+.unsubscribe .main-body .choose .slider.round {
+  border-radius: 34px;
+}
+.unsubscribe .main-body .choose .slider.round:before {
+  border-radius: 50%;
+}
+.unsubscribe .foot {
+  padding-top: 30px;
+  padding-inline: 80px;
+}
+.unsubscribe .foot p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.unsubscribe .foot button {
+  background: #16a8e1;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+}
+.unsubscribe .foot .c-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.unsubscribe .foot .c-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.unsubscribe .foot .c-check input:checked ~ .checkmark {
+  background-color: #16a8e1;
+}
+.unsubscribe .foot .c-check input:checked ~ .checkmark:after {
+  display: block;
+}
+.unsubscribe .foot .c-check .checkmark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #333253;
+}
+.unsubscribe .foot .c-check .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.unsubscribe .foot .c-check .checkmark::after {
+  left: 8px;
+  top: 2px;
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */
